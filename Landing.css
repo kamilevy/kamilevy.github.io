@@ -1,0 +1,24 @@
+.bg {
+    background-color: rgb(247,244,240);
+}
+
+.navbg{
+    color: rgb(250,67,61);
+}
+
+.main-content {
+    padding: 30px;
+    padding-top: 0px;
+}
+.active {
+    border: 2px solid #212188;
+    padding: 2px;}
+
+
+#temps-active {
+    border: 2px solid #212188;
+    padding: 2px;
+    margin-bottom: 0px;
+}
+/* ------Sizing-------- */
+

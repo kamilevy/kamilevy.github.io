@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Unit 12|Assignment</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="Landing.css">
+</head>
+
+
+
+
+<!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<!--Site Name-->      
+        <div>
+            <a class="navbar-brand" href="./index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+
+<!--Navbar plots(dropdown), comparisons, & data-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots<span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item active" href="#">Cloudiness</a>
+                            <a class="dropdown-item" href="./wind.html">Wind Speed</a>
+                        </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./compare.html">Comparison <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!--CONTENT-->
+    <div class="container">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+                    <div class="col-md-12 column">
+                        <h1 style="color:rgb(222, 91, 87); text-align: center">
+                            Latitude vs. Cloudiness
+                        </h1>
+                        <hr>
+                        <div class="row">
+    
+                                <img src="./Fig3.png" alt="figure3" class="img-summary">
+                                <p>
+                                        There is no strong relationship between latitude and cloudiness. However, it is interesting to see that a strong band of cities sits at 0, 20, and ~90% cloudiness. 
+                                </p>
+                                
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="col-md-12 column">
+                        <h1 style="color: rgb(26, 123, 116);text-align: center">Visualizations</h1>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12">
+                                    <section class="clearfix">
+                                            <a  href="./temperature.html">
+                                                <img  src="./Fig1.png" alt="Temperature(F) vs Latitude" class="img-thumbnail">
+                                            </a>
+                                            <a href="./humidity.html">
+                                                <img src="./Fig2.png" alt="Humidity vs Latitude" class="img-thumbnail ">
+                                            </a>
+                                            <a href="./cloudiness.html">
+                                                <img style="border:5px solid rgb(244, 197, 111)" src="./Fig3.png" alt="Cloudiness vs Latitude" class=" img-thumbnail">
+                                            </a>
+                                            <a href="./wind.html">
+                                                <img src="./Fig4.png" alt="Wind Speed vs Latitude" class="img-thumbnail">
+                                            </a>
+                                          </section>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+
+
+</html>
